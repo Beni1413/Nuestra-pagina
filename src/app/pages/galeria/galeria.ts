@@ -10,21 +10,21 @@ import { CommonModule } from '@angular/common';
 })
 export class GaleriaComponent {
   photos: string[] = [
-    '/micasa3.jpeg',
-    '/aftercambo.jpeg',
-    '/auto.jpeg',
-    '/primerafto.jpeg',
-    '/ultimafto.jpeg',
-    '/espejo.jpeg',
-    '/micasa.jpeg',
-    '/nosotros2.jpeg',
-    '/nosotros3.jpeg',
-    '/selfie.jpeg',
-    '/bolichecambo.jpeg',
-    '/nosotros.jpeg',
-    '/ensucasa.jpeg',
-    '/micasa2.jpeg',
-    '/caminata.jpeg'
+    'assets/fotos/micasa3.jpeg',
+    'assets/fotos/aftercambo.jpeg',
+    'assets/fotos/auto.jpeg',
+    'assets/fotos/primerafto.jpeg',
+    'assets/fotos/ultimafto.jpeg',
+    'assets/fotos/espejo.jpeg',
+    'assets/fotos/micasa.jpeg',
+    'assets/fotos/nosotros2.jpeg',
+    'assets/fotos/nosotros3.jpeg',
+    'assets/fotos/selfie.jpeg',
+    'assets/fotos/bolichecambo.jpeg',
+    'assets/fotos/nosotros.jpeg',
+    'assets/fotos/ensucasa.jpeg',
+    'assets/fotos/micasa2.jpeg',
+    'assets/fotos/caminata.jpeg'
 
     // agregá todas tus fotos acá
   ];
