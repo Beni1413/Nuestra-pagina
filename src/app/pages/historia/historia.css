@@ -1,0 +1,127 @@
+/* Fondo igual a tu galería */
+.historia-container {
+  background-color: #EDE6E3;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* GALERÍA (igual estilo que ya tenés) */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* CARD DE HISTORIA */
+.historia-card {
+  max-width: 600px;
+  margin: 2rem auto;
+
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Texto */
+.intro {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.momento {
+  background-color: #F5ECEB;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.momento:hover {
+  transform: scale(1.02);
+}
+
+/* ========================= */
+/* 🔥 NUEVO: VERSIONES LARGAS */
+/* ========================= */
+
+.versiones-largas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  position: relative;
+}
+
+/* Línea del medio */
+.versiones-largas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ddd;
+}
+
+/* Columnas */
+.columna {
+  background-color: #F5ECEB;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Diferenciar cada lado */
+.columna:nth-child(1) {
+  background-color: #D8C3C5;
+}
+
+.columna:nth-child(2) {
+  background-color: #EFE4E2;
+}
+
+/* Títulos (Vos / Ella) */
+.columna h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Texto */
+.columna p {
+  margin: 0;
+  color: #333;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .versiones-largas {
+    grid-template-columns: 1fr;
+  }
+
+  .versiones-largas::before {
+    display: none;
+  }
+}

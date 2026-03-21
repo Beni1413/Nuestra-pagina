@@ -1,0 +1,57 @@
+/* Fondo del navbar */
+.nav-wrap {
+  background-color: #EDE6E3;
+  padding: 0.6rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Contenedor interno */
+.nav-inner {
+  max-width: 1200px;          /* 🔥 evita que se estire infinito */
+  margin: 0 auto;             /* centra el contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Marca */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo más limpio */
+.logo {
+  height: 40px;               /* 🔥 más equilibrado */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;            /* 🔥 CLAVE: evita que se corten */
+  justify-content: flex-end;
+}
+
+/* Botones */
+.nav-links a {
+  background-color: #D8C3C5;
+  color: #2B2B2B;
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: 0.2s ease;
+  white-space: nowrap;        /* 🔥 evita que el texto se rompa */
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  background-color: #C9A9AC;
+}

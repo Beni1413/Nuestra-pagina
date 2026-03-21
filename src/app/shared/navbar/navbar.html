@@ -1,0 +1,15 @@
+<div class="nav-wrap">
+  <div class="nav-inner">
+    <!-- Logo + nombre -->
+    <a class="brand" routerLink="/home" (click)="close()">
+      <img src="/logoprincipal.png" class="logo" alt="Logo principal" />
+    </a>
+
+    <!-- Links -->
+    <nav class="nav-links" [class.open]="menuOpen()">
+      <a routerLink="/home" routerLinkActive="active" (click)="close()">Pagina principal</a>
+      <a routerLink="/historia" routerLinkActive="active" (click)="close()">Nuestra historia</a>
+      <a routerLink="/galeria" routerLinkActive="active" (click)="close()">Nuestras fotos</a>
+    </nav>
+  </div>
+</div>

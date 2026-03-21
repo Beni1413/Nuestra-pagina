@@ -1,0 +1,66 @@
+:host {
+  position: relative;
+  min-height: 100vh;
+  background: url('/fondohome.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+
+
+:host::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6); /* blanco suave encima */
+  backdrop-filter: blur(2px);            /* opcional: difumina el fondo */
+}
+.hero {
+  position: relative; /* asegura que el contenido quede encima del overlay */
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    color: #2B2B2B;
+    margin-bottom: .5rem;
+}
+
+.hero p {
+    color: #2B2B2B;
+    margin-bottom: 1.5rem;
+}
+
+.stats p {
+    margin: .3rem 0;
+    color: #2B2B2B;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    background: #D8C3C5;
+    color: #2B2B2B;
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    border-radius: 8px;
+    transition: background-color .2s ease;
+}
+
+.btn:hover {
+    background: #C9A9AC;
+}

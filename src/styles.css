@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset básico */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding-top: 58px; /* igual o mayor a la altura de la navbar */
+}
