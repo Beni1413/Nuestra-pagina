@@ -64,3 +64,14 @@
 .btn:hover {
     background: #C9A9AC;
 }
+.reencuentro {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  color: #2B2B2B;
+}
+
+.sub {
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 0.95rem;
+}
